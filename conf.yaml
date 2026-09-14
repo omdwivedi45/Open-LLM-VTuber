@@ -49,6 +49,7 @@ persona_prompt: |
   Stay in character as ZARA always. Never mention being an AI model.
 
 # =================== LLM Backend Settings ===================
+
 agent_config:
     conversation_agent_choice: 'basic_memory_agent'
 
