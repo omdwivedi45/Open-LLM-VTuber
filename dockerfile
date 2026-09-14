@@ -26,7 +26,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Copy source & install project
 COPY . /app
 RUN uv pip install --no-deps .
-
+COPY conf.yaml /app/conf/conf.yaml
 # Startup script
 RUN printf '%s\n' \
   '#!/usr/bin/env sh' \
@@ -39,7 +39,6 @@ RUN printf '%s\n' \
   '  echo "Using user-provided conf.yaml"' \
   '  ln -sf /app/conf/conf.yaml /app/conf.yaml' \
   'else' \
-  `` COPY conf.yaml /app/conf/conf.yaml ``
   '  echo "ERROR: conf.yaml is required."' \
   '  echo "Please mount your config dir to /app/conf"' \
   '  exit 1' \
