@@ -39,6 +39,7 @@ RUN printf '%s\n' \
   '  echo "Using user-provided conf.yaml"' \
   '  ln -sf /app/conf/conf.yaml /app/conf.yaml' \
   'else' \
+  `` COPY conf.yaml /app/conf/conf.yaml ``
   '  echo "ERROR: conf.yaml is required."' \
   '  echo "Please mount your config dir to /app/conf"' \
   '  exit 1' \
@@ -79,3 +80,4 @@ VOLUME ["/app/conf", "/app/models"]
 EXPOSE 12393
 
 CMD ["/usr/local/bin/start-app"]
+"fix conf.yaml path"
