@@ -79,4 +79,4 @@ VOLUME ["/app/conf", "/app/models"]
 EXPOSE 12393
 
 CMD ["/usr/local/bin/start-app"]
-"fix conf.yaml path"
+
