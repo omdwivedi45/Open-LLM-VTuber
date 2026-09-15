@@ -177,7 +177,7 @@ character_config:
   # === Automatic Speech Recognition ===
   asr_config:
     # speech to text model options: 'faster_whisper', 'whisper_cpp', 'whisper', 'azure_asr', 'fun_asr', 'groq_whisper_asr', 'sherpa_onnx_asr'
-    asr_model: 'sherpa_onnx_asr'
+    asr_model: 'groq_whisper_asr'
 
     azure_asr:
       api_key: 'azure_api_key'
@@ -270,9 +270,9 @@ character_config:
       provider: 'cpu' 
 
     groq_whisper_asr:
-      api_key: ''
-      model: 'whisper-large-v3-turbo' # or 'whisper-large-v3'
-      lang: '' # put nothing and it will be auto
+      api_key: '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'
+      model: 'whisper-large-v3-turbo'
+      lang: ''
 
   # =================== Text to Speech ===================
   tts_config:
