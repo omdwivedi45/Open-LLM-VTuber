@@ -110,7 +110,7 @@ character_config:
       # OpenAI Compatible inference backend
       openai_compatible_llm:
         base_url: 'https://api.groq.com/openai/v1'
-        llm_api_key: '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'
+        llm_api_key: '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'
         organization_id: null
         project_id: null
         model: 'llama-3.3-70b-versatile'
